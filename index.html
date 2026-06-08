@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura Familiar e Seus Benefícios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f6f0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #FFEB3B; /* Amarelo */
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 900px;
+            background-color: #F5F5DC; /* Marrom claro */
+            border-radius: 10px;
+        }
+        .beneficios {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .item {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .item img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .item img:hover {
+            transform: scale(1.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #795548; /* Marrom escuro */
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agricultura Familiar</h1>
+        <p>Promovendo saúde, sustentabilidade e economia local</p>
+    </header>
 
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#interativo">Interativo</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>O que é Agricultura Familiar?</h2>
+        <p>
+            A agricultura familiar é caracterizada por pequenas propriedades, onde a produção agrícola é realizada pelo próprio núcleo familiar. 
+            Ela promove a **segurança alimentar**, a **sustentabilidade ambiental** e fortalece a **economia local**.
+        </p>
+    </section>
+
+    <section id="beneficios">
+        <h2>Benefícios da Agricultura Familiar</h2>
+        <div class="beneficios">
+            <div class="item">
+                <h3>Saúde</h3>
+                <p>Alimentos frescos e de qualidade para toda a família.</p>
+            </div>
+            <div class="item">
+                <h3>Sustentabilidade</h3>
+                <p>Práticas agrícolas que preservam o solo, água e biodiversidade.</p>
+            </div>
+            <div class="item">
+                <h3>Economia Local</h3>
+                <p>Fortalece mercados locais e gera emprego na comunidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="interativo">
+        <h2>Explore os Cultivos!</h2>
+        <p>Clique nos ícones abaixo para saber mais sobre cada cultura:</p>
+        <div class="beneficios">
+            <div class="item" onclick="alert('O milho é uma cultura essencial para a alimentação e também para a renda da agricultura familiar.')">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Milho">
+                <h3>Milho</h3>
+            </div>
+            <div class="item" onclick="alert('O trator ajuda nas atividades agrícolas, aumentando a produtividade e facilitando o trabalho da família.')">
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046856.png" alt="Trator">
+                <h3>Trator</h3>
+            </div>
+            <div class="item" onclick="alert('A soja é uma importante fonte de proteína e renda, cultivada de forma sustentável.')">
+                <img src="https://cdn-icons-png.flaticon.com/512/419/419913.png" alt="Soja">
+                <h3>Soja</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agricultura Familiar. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
